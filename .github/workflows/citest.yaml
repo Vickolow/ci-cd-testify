@@ -1,8 +1,8 @@
 name: Github Action Demo
 on: [ psuh ]
 jobs: 
-  Explore-GitHub-Actions:
-    runs-on: windows-latest
+  Test:
+    runs-on: [ ubutu-latest,windons-latest, mac]
     steps:
       -uses: actions/checkout@v2
       -run: echo " The job was automatically triggered by a ${{ github.event_name }} event."
